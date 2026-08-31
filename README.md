@@ -2,15 +2,17 @@
 
 Programa en Java por consola para la manipulacion, busqueda y analisis estadistico de un vector de 15 numeros enteros en el rango de 10 a 100.
 
-## Funcionalidades
+## Flujo del Programa (Paso a Paso)
 
-1. **Llenar vector:** Permite ingresar 15 numeros enteros validando que esten entre 10 y 100. Si no se llena manualmente, el sistema genera automaticamente valores aleatorios.
-2. **Mostrar vector:** Imprime los elementos actuales del arreglo.
-3. **Buscar valor:** Encuentra si un numero existe en el vector y muestra sus posiciones.
-4. **Numero mayor y menor:** Determina el valor maximo y minimo presentes en el vector.
-5. **Multiplos de un numero X:** Identifica y muestra todos los numeros del vector que son multiplos del valor X ingresado.
-6. **Suma y promedio:** Calcula la suma total de los elementos y su promedio.
-7. **Vector con valores superiores al promedio:** Crea y muestra un nuevo vector con los numeros que superan el promedio calculado.
+El programa se ejecuta de manera secuencial cumpliendo los siguientes pasos:
+
+1. **Llenar vector:** Solicita al usuario ingresar 15 numeros enteros, validando que cada uno este en el rango de 10 a 100 y que sea un entero valido.
+2. **Mostrar vector:** Imprime en consola el vector original cargado.
+3. **Buscar valor:** Solicita un numero al usuario, busca todas sus apariciones en el arreglo e indica sus posiciones/indices.
+4. **Numero mayor y menor:** Determina y muestra el valor maximo y el valor minimo del vector.
+5. **Multiplos de un numero X:** Solicita un numero X y muestra todos los elementos del vector que son multiplos de X, junto con la cantidad total encontrada.
+6. **Suma y promedio:** Calcula e imprime la sumatoria total de los elementos y su promedio.
+7. **Vector con valores superiores al promedio:** Crea y muestra un nuevo arreglo con los elementos que superan el promedio calculado.
 
 ## Requisitos
 
@@ -27,16 +29,3 @@ Programa en Java por consola para la manipulacion, busqueda y analisis estadisti
    ```bash
    java ManipulacionVectores
    ```
-
-## Menu de Opciones
-
-Al iniciar el programa se presenta el siguiente menu interactivo:
-
-- 1: Llenar vector
-- 2: Mostrar vector actual
-- 3: Buscar un valor en el vector
-- 4: Determinar numero mayor y menor
-- 5: Identificar multiplos de un numero X
-- 6: Calcular suma total y promedio
-- 7: Crear nuevo vector con elementos mayores al promedio
-- 0: Salir del programa
