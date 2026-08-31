@@ -41,25 +41,25 @@ Desarrollar una aplicacion en Java para la gestion, busqueda y analisis estadist
 A continuacion se presentan las evidencias de ejecucion de cada uno de los pasos del programa:
 
 ### 1. Llenado y Validacion del Vector (Rango 10 - 100)
-![Llenado del Vector](screenshots/1_llenado_vector.png)
+![Llenado del Vector](1_llenado_vector.png)
 
 ### 2. Mostrar Vector Cargado
-![Mostrar Vector](screenshots/2_mostrar_vector.png)
+![Mostrar Vector](2_mostrar_vector.png)
 
 ### 3. Busqueda de un Valor en el Vector
-![Busqueda de Valor](screenshots/3_busqueda_valor.png)
+![Busqueda de Valor](3_busqueda_valor.png)
 
 ### 4. Determinacion de Valor Mayor y Menor
-![Mayor y Menor](screenshots/4_mayor_menor.png)
+![Mayor y Menor](4_mayor_menor.png)
 
 ### 5. Identificacion de Multiplos de un Numero X
-![Multiplos de X](screenshots/5_multiplos.png)
+![Multiplos de X](5_multiplos.png)
 
 ### 6. Calculo de Suma y Promedio
-![Suma y Promedio](screenshots/6_suma_promedio.png)
+![Suma y Promedio](6_suma_promedio.png)
 
 ### 7. Vector con Elementos Superiores al Promedio
-![Vector Superior al Promedio](screenshots/7_vector_promedio.png)
+![Vector Superior al Promedio](7_vector_promedio.png)
 
 ---
 
