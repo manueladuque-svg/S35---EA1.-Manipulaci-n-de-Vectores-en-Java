@@ -63,4 +63,4 @@ A continuacion se presentan las evidencias de ejecucion de cada uno de los pasos
 
 ## Enlace al Video de Demostracion
 
-- **Video explicativo:** [Pega aqui el enlace de YouTube / Drive / Loom]
+- **Video explicativo:** https://youtu.be/uyUXXyD8X8I
