@@ -24,84 +24,48 @@ public class ManipulacionVectores {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] vectorPrincipal = null;
-        boolean salir = false;
 
-        while (!salir) {
-            imprimirEncabezado("MENÚ DE OPCIONES - MANIPULACIÓN DE VECTORES");
-            System.out.println(" 1. Llenar vector (" + TAMANIO_VECTOR + " números entre " + RANGO_MIN + " y " + RANGO_MAX + ")");
-            System.out.println(" 2. Mostrar vector actual");
-            System.out.println(" 3. Buscar un valor en el vector");
-            System.out.println(" 4. Determinar número mayor y menor");
-            System.out.println(" 5. Identificar múltiplos de un número X");
-            System.out.println(" 6. Calcular suma total y promedio");
-            System.out.println(" 7. Crear nuevo vector con elementos mayores al promedio");
-            System.out.println(" 0. Salir del programa");
-            System.out.println("--------------------------------------------------------------------------------");
-            System.out.print(" Seleccione una opción: ");
+        imprimirEncabezado("SISTEMA DE MANIPULACIÓN DE VECTORES");
 
-            if (!scanner.hasNextInt()) {
-                System.out.println("\n [Error] Por favor, ingrese un número de opción válido.");
-                scanner.next(); // Limpiar entrada inválida
-                continue;
-            }
+        // -------------------------------------------------------------
+        // 1. Crear y llenar el vector con validación de rango (10 - 100)
+        // -------------------------------------------------------------
+        int[] vectorPrincipal = llenarVector(scanner, TAMANIO_VECTOR, RANGO_MIN, RANGO_MAX);
 
-            int opcion = scanner.nextInt();
+        // Mostrar los valores del vector cargado
+        mostrarVector("Vector original cargado exitosamente", vectorPrincipal);
 
-            // Si se selecciona una opción que requiere el vector y no ha sido llenado, generar uno aleatorio
-            if (opcion >= 2 && opcion <= 7 && vectorPrincipal == null) {
-                System.out.println("\n [Aviso] No se ha llenado el vector manualmente. Se generará automáticamente con valores aleatorios:");
-                vectorPrincipal = generarVectorAleatorio(TAMANIO_VECTOR, RANGO_MIN, RANGO_MAX);
-                mostrarVector("Vector actual", vectorPrincipal);
-            }
+        // -------------------------------------------------------------
+        // 2. Buscar un valor en el vector
+        // -------------------------------------------------------------
+        buscarValorEnVector(scanner, vectorPrincipal);
 
-            switch (opcion) {
-                case 1:
-                    vectorPrincipal = llenarVector(scanner, TAMANIO_VECTOR, RANGO_MIN, RANGO_MAX);
-                    mostrarVector("Vector original cargado exitosamente", vectorPrincipal);
-                    break;
+        // -------------------------------------------------------------
+        // 3. Determinar el mayor y el menor valor del vector
+        // -------------------------------------------------------------
+        determinarMayorYMenor(vectorPrincipal);
 
-                case 2:
-                    mostrarVector("Vector actual", vectorPrincipal);
-                    break;
+        // -------------------------------------------------------------
+        // 4. Identificar múltiplos de un número X
+        // -------------------------------------------------------------
+        identificarMultiplos(scanner, vectorPrincipal);
 
-                case 3:
-                    buscarValorEnVector(scanner, vectorPrincipal);
-                    break;
+        // -------------------------------------------------------------
+        // 5. Calcular la suma total y promedio
+        // -------------------------------------------------------------
+        int sumaTotal = calcularSuma(vectorPrincipal);
+        double promedio = (double) sumaTotal / vectorPrincipal.length;
 
-                case 4:
-                    determinarMayorYMenor(vectorPrincipal);
-                    break;
+        imprimirSeccion("5. CALCULO DE SUMA Y PROMEDIO");
+        System.out.println(" • Suma total de los elementos : " + sumaTotal);
+        System.out.printf(" • Promedio de los elementos   : %.2f%n", promedio);
 
-                case 5:
-                    identificarMultiplos(scanner, vectorPrincipal);
-                    break;
+        // -------------------------------------------------------------
+        // 6. Crear nuevo vector con números por encima del promedio
+        // -------------------------------------------------------------
+        crearVectorEncimaPromedio(vectorPrincipal, promedio);
 
-                case 6:
-                    int sumaTotal = calcularSuma(vectorPrincipal);
-                    double promedio = (double) sumaTotal / vectorPrincipal.length;
-                    imprimirSeccion("CALCULO DE SUMA Y PROMEDIO");
-                    System.out.println(" • Suma total de los elementos : " + sumaTotal);
-                    System.out.printf(" • Promedio de los elementos   : %.2f%n", promedio);
-                    break;
-
-                case 7:
-                    int suma = calcularSuma(vectorPrincipal);
-                    double prom = (double) suma / vectorPrincipal.length;
-                    crearVectorEncimaPromedio(vectorPrincipal, prom);
-                    break;
-
-                case 0:
-                    salir = true;
-                    imprimirEncabezado("¡GRACIAS POR USAR EL PROGRAMA! HASTA PRONTO");
-                    break;
-
-                default:
-                    System.out.println("\n [Error] Opción no válida. Ingrese un número entre 0 y 7.");
-                    break;
-            }
-        }
-
+        imprimirEncabezado("FIN DEL PROGRAMA - ¡EJECUCIÓN COMPLETADA CON ÉXITO!");
         scanner.close();
     }
 
