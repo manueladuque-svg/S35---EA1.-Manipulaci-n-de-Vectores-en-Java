@@ -1,18 +1,22 @@
 # Manipulacion de Vectores en Java
 
-Programa en Java por consola para la manipulacion, busqueda y analisis estadistico de un vector de 15 numeros enteros en el rango de 10 a 100.
+## Objetivo del Proyecto
+
+Desarrollar una aplicacion en Java para la gestion, busqueda y analisis estadistico de un vector de 15 numeros enteros en el rango de 10 a 100, implementando validaciones de entrada, calculo de maximos/minimos, identificacion de multiplos y generacion de subvectores filtrados a traves de una ejecucion estructurada y modular.
+
+---
 
 ## Flujo del Programa (Paso a Paso)
 
-El programa se ejecuta de manera secuencial cumpliendo los siguientes pasos:
+1. **Llenar vector:** Solicita 15 numeros enteros con validacion estricta en el rango [10, 100].
+2. **Mostrar vector:** Imprime en consola los elementos cargados en el arreglo.
+3. **Buscar valor:** Encuentra si un numero especifico existe e indica todas sus posiciones.
+4. **Numero mayor y menor:** Determina el valor maximo y minimo presentes en el vector.
+5. **Multiplos de un numero X:** Identifica y muestra los numeros del vector que son multiplos de X y el conteo total.
+6. **Suma y promedio:** Calcula la suma total acumulada y el promedio aritmetico de los elementos.
+7. **Vector superior al promedio:** Construye un nuevo vector que contiene unicamente los elementos mayores al promedio calculado.
 
-1. **Llenar vector:** Solicita al usuario ingresar 15 numeros enteros, validando que cada uno este en el rango de 10 a 100 y que sea un entero valido.
-2. **Mostrar vector:** Imprime en consola el vector original cargado.
-3. **Buscar valor:** Solicita un numero al usuario, busca todas sus apariciones en el arreglo e indica sus posiciones/indices.
-4. **Numero mayor y menor:** Determina y muestra el valor maximo y el valor minimo del vector.
-5. **Multiplos de un numero X:** Solicita un numero X y muestra todos los elementos del vector que son multiplos de X, junto con la cantidad total encontrada.
-6. **Suma y promedio:** Calcula e imprime la sumatoria total de los elementos y su promedio.
-7. **Vector con valores superiores al promedio:** Crea y muestra un nuevo arreglo con los elementos que superan el promedio calculado.
+---
 
 ## Requisitos
 
@@ -20,16 +24,45 @@ El programa se ejecuta de manera secuencial cumpliendo los siguientes pasos:
 
 ## Compilacion y Ejecucion
 
-1. Compilar el programa:
+1. Compilar:
    ```bash
    javac ManipulacionVectores.java
    ```
 
-2. Ejecutar el programa:
+2. Ejecutar:
    ```bash
    java ManipulacionVectores
    ```
 
+---
+
+## Capturas de Pantalla de la Consola
+
+A continuacion se presentan las evidencias de ejecucion de cada uno de los pasos del programa:
+
+### 1. Llenado y Validacion del Vector (Rango 10 - 100)
+![Llenado del Vector](screenshots/1_llenado_vector.png)
+
+### 2. Mostrar Vector Cargado
+![Mostrar Vector](screenshots/2_mostrar_vector.png)
+
+### 3. Busqueda de un Valor en el Vector
+![Busqueda de Valor](screenshots/3_busqueda_valor.png)
+
+### 4. Determinacion de Valor Mayor y Menor
+![Mayor y Menor](screenshots/4_mayor_menor.png)
+
+### 5. Identificacion de Multiplos de un Numero X
+![Multiplos de X](screenshots/5_multiplos.png)
+
+### 6. Calculo de Suma y Promedio
+![Suma y Promedio](screenshots/6_suma_promedio.png)
+
+### 7. Vector con Elementos Superiores al Promedio
+![Vector Superior al Promedio](screenshots/7_vector_promedio.png)
 
 ---
 
+## Enlace al Video de Demostracion
+
+- **Video explicativo:** [Pega aqui el enlace de YouTube / Drive / Loom]
