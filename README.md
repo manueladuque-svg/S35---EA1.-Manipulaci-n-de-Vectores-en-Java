@@ -43,23 +43,21 @@ A continuacion se presentan las evidencias de ejecucion de cada uno de los pasos
 ### 1. Llenado y Validacion del Vector (Rango 10 - 100)
 ![Llenado del Vector](1_llenado_vector.png)
 
-### 2. Mostrar Vector Cargado
+### 2. Busqueda de un Valor en el Vector
 ![Mostrar Vector](2_mostrar_vector.png)
 
-### 3. Busqueda de un Valor en el Vector
+### 3. Determinacion de Valor Mayor y Menor
 ![Busqueda de Valor](3_busqueda_valor.png)
 
-### 4. Determinacion de Valor Mayor y Menor
+### 4. Identificacion de Multiplos de un Numero X
 ![Mayor y Menor](4_mayor_menor.png)
 
-### 5. Identificacion de Multiplos de un Numero X
+### 5. Calculo de Suma y Promedio
 ![Multiplos de X](5_multiplos.png)
 
-### 6. Calculo de Suma y Promedio
+### 6. Vector con Elementos Superiores al Promedio
 ![Suma y Promedio](6_suma_promedio.png)
 
-### 7. Vector con Elementos Superiores al Promedio
-![Vector Superior al Promedio](7_vector_promedio.png)
 
 ---
 
